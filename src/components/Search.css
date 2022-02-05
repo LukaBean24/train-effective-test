@@ -1,0 +1,22 @@
+.search-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.search-container input {
+  width: 450px;
+  height: 40px;
+  padding-inline: 0.5rem;
+  color: black;
+  outline: none;
+}
+@media (max-width: 500px) {
+  .search-container input {
+    width: 90vw;
+  }
+}
