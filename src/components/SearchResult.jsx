@@ -3,14 +3,15 @@ import "./SearchResult.css";
 
 const SearchResult = ({ data }) => {
   return (
-    <a href={data.html_url} target="_blank">
-      <div className="search-results">
-        <div className="avatar">
-          <img src={data.avatar_url} alt="" />
-        </div>
-        <div className="username">{data.login}</div>
+    <div
+      className="search-results"
+      onClick={() => window.open(data.html_url, "_blank")}
+    >
+      <div className="avatar">
+        <img src={data.avatar_url} alt="" />
       </div>
-    </a>
+      <div className="username">{data.login}</div>
+    </div>
   );
 };
 
